@@ -17,12 +17,10 @@ public class UserEndpoint {
     private static final Logger log = LoggerFactory.getLogger(UserEndpoint.class);
     private final UserService userService;
 
-
+//    TODO define class global handler exception aop, should use postgresql instead of mock data of model user
     public UserEndpoint(UserService userService) {
         this.userService = userService;
     }
-//    TODO define class global handler exception aop, should use postgresql instead of mock data of model user
-//    TODO integrate with public client app, done unit test this api on postman
     @GetMapping("/users")
     public List<Users> findAllUsers(Authentication authentication) {
         log.info("Name of user '{}' forward from public client application", authentication == null ? "" : authentication.getName());
