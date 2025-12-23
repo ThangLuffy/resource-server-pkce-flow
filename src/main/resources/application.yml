@@ -8,7 +8,7 @@ spring:
           issuer-uri: http://localhost:8080/realms/spring-pkce-realm
 
 server:
-  port: 8081
+  port: 8085
 
 logging:
   level:
