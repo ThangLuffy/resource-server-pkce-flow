@@ -21,7 +21,6 @@ import java.util.Set;
 @EnableMethodSecurity(prePostEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
 
-//    TODO need review
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
