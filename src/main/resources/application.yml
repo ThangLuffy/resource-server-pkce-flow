@@ -1,14 +1,14 @@
 spring:
   application:
-    name: resource-server-pkce-flow
+    name: resource-server-authentication-code-flow
   security:
     oauth2:
       resource-server:
         jwt:
-          issuer-uri: http://localhost:8080/realms/spring-pkce-realm
+          issuer-uri: http://localhost:8080/realms/spring-authentication-code-flow-realm
 
 server:
-  port: 8085
+  port: 8086
 
 logging:
   level:
